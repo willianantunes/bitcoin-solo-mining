@@ -18,6 +18,12 @@ services:
     depends_on:
       - bitcoin-core
     command: ["./start-cpuminer-opt.sh"]
+    # https://docs.docker.com/compose/compose-file/deploy/
+    deploy:
+      resources:
+        limits:
+          cpus: '4.0'
+          memory: 1GB
 
   bitcoin-core:
     build:

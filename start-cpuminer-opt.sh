@@ -6,5 +6,5 @@ set -e
 --userpass mini:rig \
 --url http://bitcoin-core:8332 \
 --coinbase-addr=YOUR_ADDRESS \
---threads 2 \
---debug
+--threads 4 \
+-- debug
